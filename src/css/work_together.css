@@ -1,0 +1,127 @@
+.work {
+  margin-top: 48px;
+}
+
+.work-container {
+  background-image: url('../img/bg_wokr_together.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 526px 408px;
+}
+
+.work-title {
+  padding-top: 116px;
+  padding-bottom: 80px;
+
+  font-family: Impact;
+  font-size: 108px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0.016em;
+  text-transform: uppercase;
+  color: #00b068;
+  width: 510px;
+}
+
+.work-title > span {
+  color: #292929;
+}
+
+.work-wrap {
+  display: flex;
+  gap: 136px;
+}
+
+/* Left Side */
+
+.work-left {
+  width: 488px;
+}
+
+.work-left-text {
+  color: #292929;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+
+  margin-bottom: 120px;
+}
+
+/* Right side */
+
+.work-right-form {
+  width: 592px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.form-input {
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  background: #e4e5e6;
+  padding: 16px;
+}
+
+.form-input:focus + .form-label-name,
+.form-input:valid + .form-label-name {
+  transform: translate(0, -35px);
+  font-size: 12px;
+}
+
+.form-label-name {
+  position: absolute;
+
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.02em;
+  color: #292929;
+
+  top: 14px;
+  left: 16px;
+  transition: transform 0.2s ease;
+  /* background-color: #292929; */
+  padding: 0 2px;
+  z-index: 1111;
+}
+
+/* Validation */
+.form-input:not(:placeholder-shown):required:invalid {
+  color: #e74a3b;
+}
+.form-input:not(:placeholder-shown):required:valid {
+  color: #292929;
+}
+
+.form-input:not(:placeholder-shown):required:invalid ~ .form-status-error {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  /* transition: opacity var(--trans), visibility var(--trans), */
+  /* transform var(--trans); */
+
+  position: relative;
+}
+
+.form-status-error {
+  position: absolute;
+  bottom: -4px;
+  display: block;
+  transform: translateY(100%);
+  font-size: 12px;
+
+  color: #e74a3b;
+
+  opacity: 0;
+  visibility: hidden;
+  /* transition: opacity var(--trans), visibility var(--trans); */
+}
