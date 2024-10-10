@@ -6,123 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     <script type="module" crossorigin src="/Irina-Piskokha/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/Irina-Piskokha/assets/styles-DvPDDfy5.css">
+    <link rel="stylesheet" crossorigin href="/Irina-Piskokha/assets/index-FTG4ab5u.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/Irina-Piskokha/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
+    <!-- <header></header>
+ -->
 
     <main>
       <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
+      <section id="work" class="work">
+  <div class="container work-container">
+    <h2 class="work-title"><span>let's</span> work together</h2>
+    <div class="work-wrap">
+      <div class="work-left">
+        <p class="work-left-text">
+          Contact me to transform your ideas into exceptional solutions.
+        </p>
+        <ul class="work-left-contact">
+          <li>
+            <a href="tel:+38 090 456 78 90" class="work-contakt-tel"
+              >+38 090 456 78 90</a
+            >
+          </li>
+          <li>
+            <a href="mailto:lloydjefferson@gmail.com" class="work-contakt-email"
+              >lloydjefferson@gmail.com</a
+            >
+          </li>
+          <li><p class="work-contakt-location">USA, New York</p></li>
+        </ul>
+      </div>
+
+      <form
+        class="work-right-form"
+        name="work-together-form"
+        autocomplete="off"
       >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/Irina-Piskokha/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
+        <div class="form-label-wrap">
+          <label class="form-label">
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              required
+              placeholder=" "
+              pattern="^^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+              minlength="6"
+              maxlength="64"
+            />
+            <div class="form-label-name">Your email*</div>
+            <span class="form-status-error">Invalid email, try again </span>
+          </label>
+        </div>
+        <div class="form-label-wrap">
+          <label class="form-label-message form-label">
+            <textarea
+              class="input-message form-input"
+              name="message"
+              rows="8"
+              required
+              placeholder=" "
+            ></textarea>
+            <div class="form-label-name">Message</div>
+          </label>
+        </div>
+        <button class="work-button" type="submit" name="send_message">
+          send message
+        </button>
+      </form>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
   </div>
 </section>
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
-
     </main>
 
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
-
+    <!--  -->
 
   </body>
 </html>
